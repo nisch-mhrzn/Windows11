@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url('bg.jpeg'); 
+    background-size: cover; */
+    overflow: hidden;
+    height: 100vh;
+}
+
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+
+.startmenu{
+    position: absolute; 
+    /* bottom: 50px; */
+    bottom: -860px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in; 
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
+
+.right{
+    align-self: center;
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 10px;
+    top: -1px; /* Moves the element 10px towards the top */
+    height: 80%;
+    transform: scale(1.3); /* Zooms in the element */
+    transform-origin: right; /* Ensures the element zooms in from the right */
+}  
